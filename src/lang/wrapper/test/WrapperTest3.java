@@ -10,11 +10,17 @@ public class WrapperTest3 {
 
         // Integer -> int (오토 언박싱)
         int intValue = integer1;
-        System.out.println("intValue = " + intValue); // String -> int
+        System.out.println("intValue = " + intValue);
+
+        // Integer -> int
+        int intValue2 = integer1.intValue();
 
         // int -> Integer (오토 박싱)
         Integer integer2 = intValue;
         System.out.println("integer2 = " + integer2);
+
+        // int -> Integer
+        Integer integer3 = Integer.valueOf(integer2);
 
     }
 }
