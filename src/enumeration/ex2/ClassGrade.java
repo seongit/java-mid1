@@ -7,4 +7,7 @@ public class ClassGrade {
     // 각각의 상수마다 별도의 인스턴스를 생성하고, 생성한 인스턴스를 대입한다.
     public static final ClassGrade GOLD = new ClassGrade();
     public static final ClassGrade DIAMOND = new ClassGrade();
+
+    // private 생성자 추가하여 외북에서 ClassGrade를 임의로 생성하지 못하게 막았다.
+    private ClassGrade() {}
 }
